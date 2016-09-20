@@ -73,14 +73,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="hvx-id-bBc">
-                                <rect key="frame" x="20" y="38" width="280" height="510"/>
+                                <rect key="frame" x="0.0" y="66" width="320" height="299"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="9E3-J9-KMJ">
+                                <rect key="frame" x="0.0" y="373" width="320" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="6LY-Qb-Wnp"/>
                     <connections>
+                        <outlet property="captionLabel" destination="9E3-J9-KMJ" id="1m8-Sh-ThX"/>
                         <outlet property="imageView" destination="hvx-id-bBc" id="fcC-I5-5cX"/>
                     </connections>
                 </viewController>

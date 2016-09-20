@@ -15,13 +15,20 @@ class PhotoDetailsViewController: UIViewController {
     
     var image: UIImage!
     
+    var caption: String!
+    
+    @IBOutlet weak var captionLabel: UILabel!
+    
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         imageView.setImageWithURL(imageUrl)
+        print(caption)
+        captionLabel.text = caption
         
+
         // Do any additional setup after loading the view.
     }
 

@@ -182,6 +182,9 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         
                     vc.imageUrl = imageUrl
             }
+            if let imageCaption = post.valueForKeyPath("caption") as? String {
+                vc.caption = imageCaption
+            }
             else{
                 print("Oh dear")
             }
